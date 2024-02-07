@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,10 +13,6 @@ nav {
 
 html {
     scroll-behavior: smooth;
-}
-
-header {
-    height: calc(100vh - 100px);
 }
 
 li {
@@ -42,7 +38,7 @@ p {
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     display: flex;
 }
@@ -80,7 +76,7 @@ p {
 }
 
 .mini-title {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
@@ -167,7 +163,7 @@ p {
 
 
 #landing {
-    padding: 96px 0px 0px 0px;
+    padding: 96px 0px 128px 0px;
 }
 
 .header__description {
@@ -178,6 +174,7 @@ p {
 
 .header__description--title {
     font-size: 48px;
+    font-weight: 900;
 }
 
 .header__description--para {
@@ -230,7 +227,6 @@ p {
 
 .header__img {
     width: 100%;
-    max-width: 1024px;
 }
 
 
@@ -250,6 +246,7 @@ p {
 
 .features__title {
     font-size: 48px;
+    font-weight: 900;
     padding: 24px 0px;
 }
 
@@ -294,7 +291,7 @@ p {
 }
 
 .service__img {
-    padding: 20px;
+    padding: 18px;
     border: solid #e7eaf1 2px;
     border-radius: 50%;
     width: 65px;
@@ -336,11 +333,11 @@ p {
 
 .figure__quality {
     width: 50%;
+    display: flex;
 }
 
 .quality__right--img {
     width: 100%;
-    max-width: 1024px;
 }
 
 
@@ -362,7 +359,6 @@ p {
 
 .steps__img {
     width: 100%;
-    max-width: 1024px;
 }
 
 .steps__right {
@@ -527,13 +523,13 @@ p {
 .pname {
     width: 100%;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
 .pprice {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 8px 0px;
     width: 100%;
     text-align: center;
@@ -543,7 +539,7 @@ p {
     width: 100%;
     color: #a0aec0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -570,7 +566,7 @@ p {
     width: 100%;
     color: #1a202c;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .pricing__plan--button {
@@ -590,7 +586,7 @@ p {
     border-radius: 9999px;
     padding: 16px 48px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     border-style: none;
 }
@@ -618,14 +614,14 @@ p {
     color: #f7fafc;
     width: 100%;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
 .bprice {
     color: #f7fafc;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 8px 0px;
     width: 100%;
     text-align: center;
@@ -635,7 +631,7 @@ p {
     width: 100%;
     color: #f7fafc;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -663,7 +659,7 @@ p {
     width: 100%;
     color: #f7fafc;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .ppb__button {
@@ -684,7 +680,7 @@ p {
     border-radius: 9999px;
     padding: 16px 48px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     background: #f7fafc;
     border-style: none;
 }
@@ -709,13 +705,13 @@ p {
 .ename {
     width: 100%;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
 .eprice {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 8px 0px;
     width: 100%;
     text-align: center;
@@ -725,7 +721,7 @@ p {
     width: 100%;
     color: #a0aec0;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -752,7 +748,7 @@ p {
     width: 100%;
     color: #1a202c;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .pricing__plan--button {
@@ -772,7 +768,7 @@ p {
     border-radius: 9999px;
     padding: 16px 48px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     border-style: none;
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
@@ -845,7 +841,7 @@ p {
 
 .client__name {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     color: #243e63;
 }
 
@@ -939,7 +935,7 @@ p {
     border-radius: 9999px;
     padding: 16px 32px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     border-style: none;
     background-color: #f56565;
 }
@@ -955,7 +951,7 @@ p {
     border-radius: 9999px;
     padding: 16px 32px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 900;
     border-width: 1px;
     border-color: #f7fafc;
 }
@@ -971,7 +967,7 @@ p {
 
 .footer__container {
     background-color: #6415FF;
-    padding: 128px 0px 64px 0px;
+    padding: 128px 64px 64px 64px;
 }
 
 .footer__row {
@@ -1020,7 +1016,7 @@ p {
 .footer__link--title {
     color: #f7fafc;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 16px;
 }
 
@@ -1030,7 +1026,7 @@ p {
     align-items: center;
     color: #f7fafc;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
@@ -1049,3 +1045,663 @@ p {
     padding: 11px 12px;
     text-align: center;
 }
+
+
+
+/*
+
+/* LARGE DESKTOPS 
+
+@media (max-width: 1200px) {
+
+    .mini-title {
+        font-size: 14px;
+    }
+    
+    .para {
+        font-size: 14px;
+    }
+    
+    #landing {
+        padding: 96px 32px 96px 32px;
+    }
+
+    .header__description--title {
+        font-size: 40px;
+    }
+
+    .figure__header {
+        display: flex;
+    }
+
+    #features {
+        padding: 0px 32px 96px 32px;
+    }
+
+    .features__title {
+        font-size: 40px;
+    }
+
+    #quality__work {
+        padding: 96px 32px 96px 32px;
+    }
+
+    .quality__sub-title {
+        font-size: 40px;
+    }
+
+    .figure__quality {
+        flex-direction: column;
+    }
+
+    #steps {
+        padding: 96px 32px 96px 32px;
+    }
+
+    .steps__left {
+        display: flex;
+    }
+
+    #values {
+        padding: 96px 32px 96px 32px;
+    }
+
+    .values__figure {
+        display: flex;
+    }
+
+    .values__sub-title {
+        font-size: 40px;
+    }
+
+    .values__split {
+        font-size: 20px;
+    }
+
+    .pricing__section {
+        padding: 0px 32px 0px 32px;
+    }
+
+    .pricing__sub-title {
+        font-size: 40px;
+    }
+
+    .pname {
+        font-size: 18px;
+    }
+
+    .pprice {
+        font-size: 40px;
+    }
+
+    .pduration {
+        font-size: 14px;
+    }
+
+    .pmain__feature {
+        font-size: 18px;
+    }
+
+    .pfeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--personal {
+        padding: 12px 36px;
+        font-size: 14px;
+    }
+
+    .bname {
+        font-size: 18px;
+    }
+
+    .bprice {
+        font-size: 40px;
+    }
+
+    .bduration {
+        font-size: 14px;
+    }
+
+    .bmain__feature {
+        font-size: 18px;
+    }
+
+    .bfeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--business {
+        padding: 12px 36px;
+        font-size: 14px;
+    }
+
+    .ename {
+        font-size: 18px;
+    }
+
+    .eprice {
+        font-size: 40px;
+    }
+
+    .eduration {
+        font-size: 14px;
+    }
+
+    .emain__feature {
+        font-size: 18px;
+    }
+
+    .efeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--enterprise {
+        padding: 12px 36px;
+        font-size: 14px;
+    }
+
+    #testimonials {
+        padding: 90px 32px 90px 32px;
+    }
+
+    .testimonial__figure {
+        display: flex;
+    }
+
+    .testimonial__sub-title {
+        font-size: 40px;
+    }
+
+    .test__sub-title {
+        font-size: 16px;
+    }
+
+    .client__name {
+        font-size: 16px;
+    }
+
+    .client__company {
+        font-size: 14px;
+    }
+
+    #get__started {
+        padding: 96px 40px 148px 40px;
+    }
+
+    .gsboxrow {
+        height: 250px;
+    }
+
+    .gs__box {
+        margin: 0 auto;
+    }
+
+    .gs__text {
+        font-size: 28px;
+    }
+
+    .btn__gs, 
+    .btn__contact {
+        font-size: 14px;
+    }
+
+    .footer__container {
+        padding: 100px 52px 52px 52px;
+    }
+
+    .footer__link--title {
+        font-size: 18px;
+    }
+
+    .ind__footer--links {
+        font-size: 16px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+/* DESKTOPS 
+
+
+
+
+
+@media (max-width: 992px) {
+    
+    .header__description {
+        padding-right: 12px;
+    }
+    .header__input--email {
+        position: static;
+        width: 100%;        
+    }
+
+    .btn__header--get--started {
+        position: static;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .pricing__plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing__section--title {
+        padding: 0px 0px 64px;
+    }
+
+    .pricing__plan {
+        transform: scale(1.2);
+        padding: 0px 0px 164px 0px;
+    }
+    
+    .ppp__header {
+        padding: 52px 56px;
+    }
+
+    .ppp__features {
+        padding: 52px 56px;
+    }
+
+    #testimonials {
+        padding: 0px 32px 90px 32px;
+    }
+
+    .btn__gs {
+        margin: 0px 10px 0px 0px;
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+
+    .btn__contact {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+
+    .footer__link--title {
+        font-size: 16px;
+    }
+
+    .ind__footer--links {
+        font-size: 14px;
+    }
+
+    .footer__copyright{
+        font-size: 12px;
+    }
+
+    .footer__figure {
+        font-size: 16px;
+    }
+
+    .footer__fb {
+        height: 30px;
+        padding: 8px 10px;  
+    }
+
+    .footer__t {
+        height: 30px;
+        padding: 8px 10px;
+    }
+
+    .footer__yt {
+        height: 30px;
+        padding: 8px 10px;
+    }
+}
+
+
+
+
+
+/* TABLETS 
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .para {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    .header__description--title {
+        font-size: 30px;
+    }
+
+    .header__description--para {
+        padding: 18px 0px;
+    }
+
+    .header__input--email {
+        padding: 12px 24px;
+    }
+
+    .features__title {
+        font-size: 30px;
+    }
+
+    .features__para {
+        padding-bottom: 32px;
+    }
+     
+    .service__img {
+        padding: 8px;
+        width: 40px;
+        height: 40px;        
+    }
+
+    .services__small--title {
+        font-size: 16px;
+    }
+
+    .quality__sub-title {
+        font-size: 30px;
+    }
+
+    .quality__left {
+        padding: 0px 12px 0px 0px;
+    }
+
+    .figure__quality {
+        flex-direction: row;
+    }
+
+    .steps__left {
+        flex-direction: row;
+    }
+
+    .values__sub-title {
+        font-size: 30px;
+    }
+
+    .values__figure {
+        flex-direction: row;
+    }
+
+    .values__split {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .gs__text {
+        font-size: 22px;
+    }
+
+    .btn__gs,
+    .btn__contact {
+        padding: 8px 16px;
+    }
+
+}
+
+*/
+
+@media (max-width: 576px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*---------------HEADER-----------------*/
+
+    .header__description {
+        width: 80%;
+    }
+
+    .header__description--title {
+        font-size: 36px;
+    }
+
+    .figure__header {
+        width: 80%;
+    }
+
+    /*----------------FEATURES------------------*/
+    
+    #features {
+        padding: 0px 0px 44px;
+    }
+    .features__section {
+        width: 80%;
+    }
+
+    .features__title {
+        font-size: 36px;
+    }
+
+    .features__para {
+        width: 100%;
+    }
+
+    .features__services--section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 0px 32px 0px;
+    }
+
+    /*----------------QUALITY------------------*/
+
+    .quality__left {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .quality__sub-title {
+        font-size: 36px;
+    }
+
+    .figure__quality {
+        width: 80%;
+        padding-top: 32px;
+    }
+
+    /*-----------------STEPS---------------------*/
+
+    #steps {
+        padding-bottom: 44px;
+    }
+    .steps__left {
+        width: 80%;
+        padding-bottom: 36px;
+    }
+
+    .steps__right {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    /*--------------------VALUES----------------*/
+
+    .values__left {
+        width: 80%;
+    }
+
+    .values__sub-title {
+        font-size: 36px;
+    }
+
+    .values__para {
+        margin: 28px 0px 40px 0px;
+    }
+
+    .values__split {
+        font-size: 20px;
+    }
+
+    .values__figure {
+        width: 80%;
+    }
+
+    /*-------------------------PRICING-------------------*/
+
+    .pricing__section--title {
+        width: 100%;
+    }
+
+    .pricing__sub-title {
+        font-size: 36px;
+    }
+    .pricing__para {
+        width: 80%;
+    }
+
+    .pricing__plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing__plan {
+        transform: scale(1.7);
+        padding: 250px 0px 180px 0px;
+    }
+    
+    .pname {
+        font-size: 16px;
+    }
+
+    .pprice {
+        font-size: 36px;
+    }
+
+    .pduration {
+        font-size: 12px;
+    }
+
+    .pmain__feature {
+        font-size: 16px;
+    }
+
+    .pfeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--personal {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    .bname {
+        font-size: 16px;
+    }
+
+    .bprice {
+        font-size: 36px;
+    }
+
+    .bduration {
+        font-size: 12px;
+    }
+
+    .bmain__feature {
+        font-size: 16px;
+    }
+
+    .bfeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--business {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    .ename {
+        font-size: 16px;
+    }
+
+    .eprice {
+        font-size: 36px;
+    }
+
+    .eduration {
+        font-size: 12px;
+    }
+
+    .emain__feature {
+        font-size: 16px;
+    }
+
+    .efeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--enterprise {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    /*---------------------TESTIMONIALS------------------*/
+
+    #testimonials {
+        padding: 44px 0px 44px 0px;
+    }
+
+    .testimonial__figure {
+        width: 80%;
+    }
+
+    .testimonial__right {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .testimonial__sub-title {
+        font-size: 36px;
+    }
+
+    /*------------------------GET STARTED----------------*/
+
+    .gsboxrow {
+        width: 90%;
+        height: 200px;
+    }
+
+    .gs__box {
+        padding: 0px 10px;
+    }
+
+    .gs__text {
+        font-size: 16px;
+    }
+
+    .btn__gs, 
+    .btn__contact {
+        padding: 14px 28px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .btn__gs {
+        margin-right: 12px;
+    }
+
+    
+}
+
+
