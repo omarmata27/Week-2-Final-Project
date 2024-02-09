@@ -84,6 +84,11 @@ p {
     color: #7c8ba1;
 }
 
+.no-cursor {
+    cursor: not-allowed;
+}
+
+
 
 
 
@@ -153,7 +158,80 @@ p {
     padding: 8px 24px;
 }
 
- 
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #6415FF;
+    display: none;
+}
+
+.menu__backdrop {
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    padding: 32px;
+    margin: 24px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #e2e8f0;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 12px 0px
+}
+
+.menu__link {
+    font-size: 32px;
+    color: #1a202c;
+}
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: #6415FF;
+}
+
+
+.btn__menu--sign-up {
+    color: #ffffff;
+    border-radius: 9999px;
+    height: 52px;
+    border-style: none;
+    background-color: #0000ff;
+    transition: all 300ms; 
+    padding: 10px 24px 8px 24px;
+    text-align: center;
+}
+
+
+
 
 
 /*    HEADER     */
@@ -947,7 +1025,7 @@ p {
 
 .btn__contact {
     color: #f7fafc;
-    background-color: #6415FF;
+    background-color: transparent;
     border-radius: 9999px;
     padding: 16px 32px;
     font-size: 16px;
@@ -1048,9 +1126,9 @@ p {
 
 
 
-/*
 
-/* LARGE DESKTOPS 
+
+/*---------------------------------LARGE DESKTOPS--------------------------------*/
 
 @media (max-width: 1200px) {
 
@@ -1062,6 +1140,9 @@ p {
         font-size: 14px;
     }
     
+
+/*------------------------HEADER-------------------*/
+
     #landing {
         padding: 96px 32px 96px 32px;
     }
@@ -1074,6 +1155,9 @@ p {
         display: flex;
     }
 
+
+/*----------------------FEATURES--------------------*/
+
     #features {
         padding: 0px 32px 96px 32px;
     }
@@ -1081,6 +1165,8 @@ p {
     .features__title {
         font-size: 40px;
     }
+
+/*--------------------QUALITY WORK------------------*/
 
     #quality__work {
         padding: 96px 32px 96px 32px;
@@ -1091,17 +1177,23 @@ p {
     }
 
     .figure__quality {
-        flex-direction: column;
+        display: flex;
     }
 
+/*---------------------STEPS--------------------------*/
     #steps {
         padding: 96px 32px 96px 32px;
     }
 
     .steps__left {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 12px;
     }
 
+
+/*--------------------VALUES---------------------------*/
     #values {
         padding: 96px 32px 96px 32px;
     }
@@ -1117,6 +1209,8 @@ p {
     .values__split {
         font-size: 20px;
     }
+
+/*---------------------PRICING----------------------*/
 
     .pricing__section {
         padding: 0px 32px 0px 32px;
@@ -1201,6 +1295,8 @@ p {
         font-size: 14px;
     }
 
+/*-----------------------TESTIMONIALS--------------------*/
+
     #testimonials {
         padding: 90px 32px 90px 32px;
     }
@@ -1217,6 +1313,10 @@ p {
         font-size: 16px;
     }
 
+    .testimonial__right {
+        padding-left: 28px;
+    }
+
     .client__name {
         font-size: 16px;
     }
@@ -1225,6 +1325,7 @@ p {
         font-size: 14px;
     }
 
+/*------------------GET STARTED-----------------*/
     #get__started {
         padding: 96px 40px 148px 40px;
     }
@@ -1245,6 +1346,8 @@ p {
     .btn__contact {
         font-size: 14px;
     }
+
+/*----------------FOOTER----------------*/
 
     .footer__container {
         padding: 100px 52px 52px 52px;
@@ -1268,17 +1371,37 @@ p {
 
 
 
-/* DESKTOPS 
+/*----------------------------------DESKTOPS---------------------------------*/ 
 
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
 
+    .btn__menu {
+        display: block;
+    }
+}
 
 
 
 @media (max-width: 992px) {
     
+
+
+   /*------------------------HEADER------------------*/ 
+    #landing {
+        padding: 96px 32px 128px 32px;
+    }
+
     .header__description {
         padding-right: 12px;
     }
+
+    .header__description--title {
+        font-size: 40px;
+    }
+
     .header__input--email {
         position: static;
         width: 100%;        
@@ -1290,33 +1413,177 @@ p {
         width: 100%;
     }
 
-    .pricing__plans {
+    .figure__header {
         display: flex;
-        flex-direction: column;
+    }
+
+    /*--------------------------FEATURES--------------------*/
+
+    .features__section {
+        padding: 0px 32px;
+    }
+    .features__title {
+        font-size: 40px;
+    }
+
+    .service__img {
+        margin-top: 16px;
+    }
+
+    /*--------------------------QUALITY WORK-----------------*/
+
+    #quality__work {
+        padding: 96px 32px;
+    }
+
+    .quality__left {
+        padding: 0px 10px 0px 0px;
+    }
+
+    .quality__sub-title {
+        font-size: 40px;
+    }
+    .figure__quality {
+        display: flex;
+    }
+
+    /*----------------------------STEPS-----------------------*/
+
+    #steps{
+        padding: 96px 32px;
+    }
+
+    .steps__left {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .pricing__section--title {
-        padding: 0px 0px 64px;
+    .steps__right {
+        padding: 0px 0px 0px 12px;
     }
 
-    .pricing__plan {
-        transform: scale(1.2);
-        padding: 0px 0px 164px 0px;
+    /*--------------------------VALUES------------------------*/
+
+    #values {
+        padding: 96px 32px;
+    }
+
+    .values__sub-title {
+        font-size: 40px;
+    }
+
+    .values__split {
+        font-size: 20px;
+    }
+
+    .values__figure {
+        display: flex;
     }
     
-    .ppp__header {
-        padding: 52px 56px;
+    /*--------------------------PRICING---------------------*/
+   
+    .pricing__section {
+        padding: 0px 32px;
     }
 
-    .ppp__features {
-        padding: 52px 56px;
+    .pricing__para {
+        width: 70%;
     }
+
+    .pname {
+        font-size: 18px;
+    }
+
+    .pprice {
+        font-size: 40px;
+    }
+
+    .pduration {
+        font-size: 14px;
+    }
+
+    .pmain__feature {
+        font-size: 18px;
+    }
+
+    .pfeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--personal {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 14px;
+    }
+
+    .bname {
+        font-size: 18px;
+    }
+
+    .bprice {
+        font-size: 40px;
+    }
+
+    .bduration {
+        font-size: 14px;
+    }
+
+    .bmain__feature {
+        font-size: 18px;
+    }
+
+    .bfeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--business {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 14px;
+    }
+
+    .ename {
+        font-size: 18px;
+    }
+
+    .eprice {
+        font-size: 40px;
+    }
+
+    .eduration {
+        font-size: 14px;
+    }
+
+    .emain__feature {
+        font-size: 18px;
+    }
+
+    .efeature {
+        font-size: 14px;
+    }
+
+    .btn__pp--enterprise {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 14px;
+    }
+
+    /*-----------------TESTIMONIALS---------------------------*/
 
     #testimonials {
         padding: 0px 32px 90px 32px;
     }
+
+    .testimonial__figure {
+        display: flex;
+    }
+
+    .testimonial__sub-title {
+        font-size: 40px;
+    }
+
+    /*-----------------------GET STARTED------------------------*/
 
     .btn__gs {
         margin: 0px 10px 0px 0px;
@@ -1328,6 +1595,17 @@ p {
         padding: 12px 24px;
         font-size: 12px;
     }
+
+    #get__started {
+        padding: 96px 32px 196px 32px;    
+    }
+
+    .gs__box {
+        margin: 0px 64px;
+    }
+
+
+    /*----------------------------FOOTER---------------------*/
 
     .footer__link--title {
         font-size: 16px;
@@ -1365,92 +1643,299 @@ p {
 
 
 
-/* TABLETS 
-
-
-
-
+/*-------------------------------------TABLETS------------------------------------*/
 
 @media (max-width: 768px) {
 
-    .para {
-        font-size: 12px;
+ .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    h3 {
-        font-size: 16px;
+    /*---------------HEADER-----------------*/
+
+    .header__description {
+        width: 80%;
     }
+
     .header__description--title {
-        font-size: 30px;
+        font-size: 36px;
     }
 
-    .header__description--para {
-        padding: 18px 0px;
+    .figure__header {
+        width: 80%;
     }
 
-    .header__input--email {
-        padding: 12px 24px;
+    /*----------------FEATURES------------------*/
+    
+    #features {
+        padding: 0px 0px 44px;
+    }
+    .features__section {
+        width: 80%;
     }
 
     .features__title {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .features__para {
-        padding-bottom: 32px;
+        width: 100%;
     }
-     
+
+    .features__services--section {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% / 2);
+    }
+
     .service__img {
-        padding: 8px;
-        width: 40px;
-        height: 40px;        
+        margin-top: 14px;
     }
 
-    .services__small--title {
-        font-size: 16px;
-    }
-
-    .quality__sub-title {
-        font-size: 30px;
-    }
+    /*-----------QUALITY--------------*/
 
     .quality__left {
-        padding: 0px 12px 0px 0px;
-    }
-
-    .figure__quality {
-        flex-direction: row;
-    }
-
-    .steps__left {
-        flex-direction: row;
-    }
-
-    .values__sub-title {
-        font-size: 30px;
-    }
-
-    .values__figure {
-        flex-direction: row;
-    }
-
-    .values__split {
-        font-size: 16px;
+        width: 80%;
         padding: 0px;
     }
 
+    .quality__sub-title {
+        font-size: 36px;
+    }
+
+    .figure__quality {
+        width: 80%;
+        padding-top: 32px;
+    }
+
+    /*-----------STEPS------------*/
+
+    #steps {
+        padding-bottom: 44px;
+    }
+    .steps__left {
+        width: 80%;
+        padding-bottom: 36px;
+    }
+
+    .steps__right {
+        width: 80%;
+        margin-left: 100px;
+    }
+
+    /*-----------VALUES-------------*/
+
+    .values__left {
+        width: 80%;
+    }
+
+    .values__sub-title {
+        font-size: 36px;
+    }
+
+    .values__para {
+        margin: 28px 0px 40px 0px;
+    }
+
+    .values__split {
+        font-size: 20px;
+    }
+
+    .values__figure {
+        width: 80%;
+    }
+
+    /*-------------PRICING---------------*/
+
+    .pricing__section--title {
+        width: 100%;
+    }
+
+    .pricing__sub-title {
+        font-size: 36px;
+    }
+    .pricing__para {
+        width: 80%;
+    }
+
+    .pricing__plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pricing__plan {
+        transform: scale(1.7);
+        padding: 250px 0px 180px 0px;
+    }
+    
+    .pname {
+        font-size: 16px;
+    }
+
+    .pprice {
+        font-size: 36px;
+    }
+
+    .pduration {
+        font-size: 12px;
+    }
+
+    .pmain__feature {
+        font-size: 16px;
+    }
+
+    .pfeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--personal {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    .bname {
+        font-size: 16px;
+    }
+
+    .bprice {
+        font-size: 36px;
+    }
+
+    .bduration {
+        font-size: 12px;
+    }
+
+    .bmain__feature {
+        font-size: 16px;
+    }
+
+    .bfeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--business {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    .ename {
+        font-size: 16px;
+    }
+
+    .eprice {
+        font-size: 36px;
+    }
+
+    .eduration {
+        font-size: 12px;
+    }
+
+    .emain__feature {
+        font-size: 16px;
+    }
+
+    .efeature {
+        font-size: 12px;
+    }
+
+    .btn__pp--enterprise {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 8px 10px;
+    }
+
+    /*-------------TESTIMONIALS---------------*/
+
+    #testimonials {
+        padding: 44px 0px 44px 0px;
+    }
+
+    .testimonial__figure {
+        width: 80%;
+    }
+
+    .testimonial__right {
+        width: 80%;
+        padding: 0px;
+    }
+
+    .testimonial__sub-title {
+        font-size: 36px;
+    }
+
+    /*-------------GET STARTED----------------*/
+
+    .gsboxrow {
+        width: 90%;
+        height: 200px;
+    }
+
+    .gs__box {
+        padding: 0px 10px;
+    }
+
     .gs__text {
-        font-size: 22px;
+        font-size: 16px;
     }
 
-    .btn__gs,
+    .btn__gs, 
     .btn__contact {
-        padding: 8px 16px;
+        padding: 14px 28px;
+        font-size: 12px;
+        margin: 0 auto;
     }
 
+    .btn__gs {
+        margin-right: 12px;
+    }
+
+    /*-------------FOOTER---------------*/
+
+    .footer__link--title {
+        font-size: 16px;
+    }
+
+    .ind__footer--links {
+        font-size: 12px;
+    }
+
+    .footer__figure {
+        font-size: 16px;
+    }
+
+    .footer__copyright {
+        font-size: 10px;
+    }
+
+    .footer__social {
+        font-size: 12px;
+    }
+
+    .footer__fb {
+        padding: 12px 10px 12px 10px;
+    }
+
+    .footer__t {
+        padding: 12px 10px 12px 10px;
+    }
+    
+    .footer__yt {
+        padding: 12px 10px 12px 10px;
+    }
 }
 
-*/
+
+
+/*---------------------MOBILE PHONES--------------------------*/
+
+
 
 @media (max-width: 576px) {
     .row {
@@ -1701,7 +2186,39 @@ p {
         margin-right: 12px;
     }
 
-    
+    /*---------------------------------FOOTER---------------------*/
+
+    .footer__link--title {
+        font-size: 16px;
+    }
+
+    .ind__footer--links {
+        font-size: 12px;
+    }
+
+    .footer__figure {
+        font-size: 16px;
+    }
+
+    .footer__copyright {
+        font-size: 10px;
+    }
+
+    .footer__social {
+        font-size: 12px;
+    }
+
+    .footer__fb {
+        padding: 12px 10px 12px 10px;
+    }
+
+    .footer__t {
+        padding: 12px 10px 12px 10px;
+    }
+
+    .footer__yt {
+        padding: 12px 10px 12px 10px;
+    }
 }
 
 
