@@ -85,7 +85,7 @@ p {
 }
 
 .no-cursor {
-    cursor: not-allowed;
+    cursor: not-allowed !important;
 }
 
 
@@ -207,7 +207,7 @@ p {
 }
 
 .menu__link {
-    font-size: 32px;
+    font-size: 28px;
     color: #1a202c;
 }
 .btn__menu--close {
