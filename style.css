@@ -979,16 +979,16 @@ p {
 
 .gs__box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0px 128px;
-    padding: 0px 32px;
-   
+    padding: 0px 12px;   
 }
 
 .gsboxrow {
+    align-items: center;
+    justify-content: center;
     border-style: none;
     border-width: 1px;
     border-radius: 10px;
@@ -1003,25 +1003,20 @@ p {
 }
 
 .gs__btn {
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .btn__gs {
     color: #f7fafc;
     border-radius: 9999px;
     padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 14px;
     border-style: none;
     background-color: #f56565;
-}
-
-.btn__gs {
-    margin-right: 32px;
-    box-shadow: 0 8px 16px rgba(0,0,0,.15)
 }
 
 .btn__contact {
@@ -1029,8 +1024,7 @@ p {
     background-color: transparent;
     border-radius: 9999px;
     padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 14px;
     border-width: 1px;
     border-color: #f7fafc;
 }
@@ -1475,7 +1469,8 @@ p {
     }
 
     .values__split {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0px;
     }
 
     .values__figure {
@@ -1602,7 +1597,7 @@ p {
     }
 
     .gs__box {
-        margin: 0px 64px;
+        margin: 0px 12px;
     }
 
 
@@ -1750,7 +1745,7 @@ p {
     }
 
     .values__split {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .values__figure {
@@ -1899,27 +1894,23 @@ p {
     /*-------------GET STARTED----------------*/
 
     .gsboxrow {
-        width: 90%;
+        width: 100%;
         height: 200px;
     }
 
     .gs__box {
+        margin: 0px;
         padding: 0px 10px;
     }
 
     .gs__text {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .btn__gs, 
     .btn__contact {
-        padding: 14px 28px;
+        padding: 10px 20px;
         font-size: 12px;
-        margin: 0 auto;
-    }
-
-    .btn__gs {
-        margin-right: 12px;
     }
 
     /*-------------FOOTER---------------*/
@@ -2225,22 +2216,34 @@ p {
     }
 
     .gs__box {
-        padding: 0px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 16px 0px;
     }
 
+    .gs__btn {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
     .gs__text {
         font-size: 16px;
     }
 
     .btn__gs, 
     .btn__contact {
-        padding: 14px 28px;
+        padding: 6px 12px;
         font-size: 12px;
-        margin: 0 auto;
     }
 
     .btn__gs {
-        margin-right: 12px;
+        margin: 16px 0px 12px;
     }
 
     /*---------------------------------FOOTER---------------------*/
