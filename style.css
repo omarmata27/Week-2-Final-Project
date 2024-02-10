@@ -568,17 +568,18 @@ p {
 .pricing__plans {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    padding: 56px 0px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
 }
 
 .pricing__plan {
     width: calc(100% / 3);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 0px 12px;
 }
 
 .ppp__header {
@@ -1769,8 +1770,9 @@ p {
     }
 
     .pricing__plan {
-        transform: scale(1.7);
-        padding: 250px 0px 180px 0px;
+        width: 50%;
+        height: calc(100% / 3);
+        padding-bottom: 32px;
     }
     
     .pname {
@@ -1794,7 +1796,7 @@ p {
     }
 
     .btn__pp--personal {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
@@ -1820,7 +1822,7 @@ p {
     }
 
     .btn__pp--business {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
@@ -1846,7 +1848,7 @@ p {
     }
 
     .btn__pp--enterprise {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
@@ -1957,6 +1959,7 @@ p {
 
     .figure__header {
         width: 80%;
+        padding-top: 32px;
     }
 
     /*----------------FEATURES------------------*/
@@ -1977,10 +1980,8 @@ p {
     }
 
     .features__services--section {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-auto-flow: column;
         width: 100%;
         padding: 0px 0px 32px 0px;
     }
@@ -2001,6 +2002,10 @@ p {
         padding-top: 32px;
     }
 
+    .btn__learn--more {
+        width: 100%;
+    }
+
     /*-----------------STEPS---------------------*/
 
     #steps {
@@ -2016,10 +2021,17 @@ p {
         margin-left: 100px;
     }
 
+    .steps__right--small {
+        display: grid;
+        grid-auto-flow: column;
+        padding-top: 32px;
+    }
+
     /*--------------------VALUES----------------*/
 
     .values__left {
         width: 80%;
+        
     }
 
     .values__sub-title {
@@ -2031,12 +2043,27 @@ p {
     }
 
     .values__split {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .fa-briefcase {
+        padding: 10px 6px;        
+    }
+
+    .fa-dollar-sign {
+        padding: 11px 10px;
+    }
+
+    .values__btn {
+        width: 100%;
     }
 
     .values__figure {
         width: 80%;
+        padding-top: 32px;
     }
+
 
     /*-------------------------PRICING-------------------*/
 
@@ -2059,87 +2086,89 @@ p {
     }
 
     .pricing__plan {
-        transform: scale(1.7);
-        padding: 250px 0px 180px 0px;
+        width: 50%;
+        height: calc(100% / 3);
+        padding: 0px 0px 32px;
     }
     
     .pname {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .pprice {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .pduration {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .pmain__feature {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .pfeature {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .btn__pp--personal {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
 
     .bname {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .bprice {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .bduration {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .bmain__feature {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .bfeature {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .btn__pp--business {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
 
     .ename {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .eprice {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .eduration {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .emain__feature {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .efeature {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .btn__pp--enterprise {
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 400;
         padding: 8px 10px;
     }
+
 
     /*---------------------TESTIMONIALS------------------*/
 
@@ -2158,6 +2187,10 @@ p {
 
     .testimonial__sub-title {
         font-size: 36px;
+    }
+
+    .testimonial__img {
+        padding: 0px 0px 32px;
     }
 
     /*------------------------GET STARTED----------------*/
@@ -2188,12 +2221,22 @@ p {
 
     /*---------------------------------FOOTER---------------------*/
 
+    .footer__row {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
     .footer__link--title {
         font-size: 16px;
     }
 
     .ind__footer--links {
         font-size: 12px;
+    }
+
+    .footer__divider {
+        margin: 48px 0px;
+        opacity: 40%;
     }
 
     .footer__figure {
