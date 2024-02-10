@@ -1667,6 +1667,7 @@ p {
 
     .figure__header {
         width: 80%;
+        padding-top: 32px;
     }
 
     /*----------------FEATURES------------------*/
@@ -1698,6 +1699,9 @@ p {
 
     /*-----------QUALITY--------------*/
 
+    #quality__work {
+        padding: 96px 32px 44px;
+    }
     .quality__left {
         width: 80%;
         padding: 0px;
@@ -1710,6 +1714,10 @@ p {
     .figure__quality {
         width: 80%;
         padding-top: 32px;
+    }
+
+    .btn__learn--more {
+        width: 100%;
     }
 
     /*-----------STEPS------------*/
@@ -1747,6 +1755,11 @@ p {
 
     .values__figure {
         width: 80%;
+        padding-top: 32px;
+    }
+
+    .values__btn {
+        width: 100%;
     }
 
     /*-------------PRICING---------------*/
@@ -1798,7 +1811,11 @@ p {
     .btn__pp--personal {
         font-size: 14px;
         font-weight: 400;
-        padding: 8px 10px;
+        padding: 14px 16px;
+    }
+
+    .pricing__plan--button {
+        padding: 32px;
     }
 
     .bname {
@@ -1824,7 +1841,11 @@ p {
     .btn__pp--business {
         font-size: 14px;
         font-weight: 400;
-        padding: 8px 10px;
+        padding: 14px 16px;
+    }
+
+    .ppb__button {
+        padding: 32px;
     }
 
     .ename {
@@ -1850,7 +1871,7 @@ p {
     .btn__pp--enterprise {
         font-size: 14px;
         font-weight: 400;
-        padding: 8px 10px;
+        padding: 14px 16px;
     }
 
     /*-------------TESTIMONIALS---------------*/
@@ -1872,6 +1893,9 @@ p {
         font-size: 36px;
     }
 
+    .testimonial__img {
+        padding-bottom: 32px;
+    }
     /*-------------GET STARTED----------------*/
 
     .gsboxrow {
